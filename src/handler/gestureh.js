@@ -7,3 +7,9 @@ export const getGestures = () => {
   const data = JSON.parse(dataPaylod);
   return data;
 };
+
+export const podtGestures = () => {
+  const dataPaylod = fs.readFileSync(mainlink);
+  const data = JSON.parse(dataPaylod);
+  return data;
+};
